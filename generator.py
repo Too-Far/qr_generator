@@ -3,7 +3,6 @@ This program creates a QR code for a home wifi (to be able to give to guests, et
 '''
 
 import pyqrcode as pq
-# import pypng
 
 
 ssid = 'HCpublic' #Put whatever the network name is here
