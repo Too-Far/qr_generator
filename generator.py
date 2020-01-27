@@ -4,10 +4,9 @@ This program creates a QR code for a home wifi (to be able to give to guests, et
 
 import pyqrcode as pq
 
-
-ssid = 'HCpublic' #Put whatever the network name is here
-security = 'WPA' #Put whether the security is WPA or WEP
-password = '1234556847' #WIFI password here
+ssid = 'MySpectrumWiFi65-5g' #Put whatever the network name is here
+security = 'WEP' #Put whether the security is WPA or WEP
+password = 'desertmarble318' #WIFI password here
 #Creates QR code 
 #qr = pq.create(f'WIFI:S:{ssid}; T: {security} ;P: {password};;')
 qr = pq.create(f'WIFI:S:{ssid};;')
@@ -19,4 +18,6 @@ with open('WIFI.png', 'w') as fstream:
 # qr.svg('WIFI.svg', scale=4)
 
 #Or simply print to terminal:
-# print(qr.terminal())
+print(qr.terminal())
+
+#coment comment comment
